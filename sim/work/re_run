@@ -1,0 +1,15 @@
+#!/bin/bash -f
+
+#------------------------
+#Run simulation
+#------------------------
+ vsim    \
+      -c \
+      -l simulation.log \
+      -novopt +notimingchecks \
+      -L work  \
+      -L podesm0o_lib \
+      work.testbench \
+      -do ../testbench/run_finish
+      
+      

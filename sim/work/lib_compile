@@ -1,0 +1,48 @@
+ #!/bin/bash -f
+ 
+#-------------------
+#Clear old lib files
+#------------------- 
+vdel -lib leon3lib -all
+vlib leon3lib
+vdel  -lib AMY_lib   -all
+vlib  AMY_lib
+vdel -lib work         -all
+vlib  work 
+           
+
+#------------------------
+#Complie VHDL files to LEON3LIB
+#------------------------
+vcom  \
+      -93 -work leon3lib  \
+      ../../src/leon3_lib/leon3/src/stdlib.vhd \
+      ../../src/leon3_lib/leon3/src/libtype.vhd \
+      ../../src/leon3_lib/amba/src/amba.vhd \
+      ../../src/leon3_lib/leon3_comp.vhd \
+      ../../src/leon3_lib/leon3/src/leon3.vhd 
+                                         
+vcom  \
+     -93 -work leon3lib  \
+     ../../src/leon3_lib/uart/src/ahbmst.vhd \
+     ../../src/leon3_lib/uart/src/dcom_uart.vhd \
+     ../../src/leon3_lib/uart/src/dcom.vhd \
+     ../../src/leon3_lib/uart/src/ahbuart.vhd \
+     ../../src/leon3_lib/uart/src/apbuart.vhd
+
+ 
+
+#------------------------
+#Complie verilog files to AMY_LIB
+#------------------------  
+ vlog \
+     -work AMY_lib   \
+     -novopt -incr +define+DBG_EMU \
+     -f ../../src/PODES_M0A/proc_unit/proc_unit_filelist.f \
+     -f ../../src/PODES_M0A/PODES_M0A_filelist.f \
+     -f ../../src/AMY_filelist.f
+ 
+ vcom  \
+     -93 -work AMY_lib  \
+     ../../src/leon3_lib/uart/src/apbuart_wrapper.vhd \
+     ../../src/leon3_lib/uart/src/uart_dcu.vhd

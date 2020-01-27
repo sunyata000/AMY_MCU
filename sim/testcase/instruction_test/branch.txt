@@ -1,0 +1,27 @@
+//******************************************************************************
+//The binary codes for instruction test
+//Purpose: BL. (how to calculate the new PC????)
+//new address = current inst address + 4 + offset;
+//, where the offset is SignExtend(S:I1:I2:imm10:imm11:0, 32).
+//******************************************************************************
+//
+@0000_0000  2000_03fc  //SP initial position;
+@0000_0001  0000_0051  //reset vector; 
+//
+@0000_0014  2122_2011  //mov r1, #h22; mov r0, #h11; 
+@0000_0015  2344_2233  //mov r3, #h44; mov r2, #h33;
+@0000_0016  2566_2455  //mov r5, #h66; mov r4, #h55;
+@0000_0017  2788_2677  //mov r7, #h88; mov r6, #h77;
+
+@0000_0018  4148_b5ff  //adc r0, r1; push LR, r0-r7;
+@0000_0019  f80a_f000  //bl (0000_001f);  (PC +14h)
+@0000_001a  0625_2420  //lsl r5,r4,#24; mov r4, #32;
+@0000_001b  68aa_60ac  //ldr r2, r5, #2; str r4, r5, #2;
+
+@0000_001c  21f1_20f0  //mov r1, #hf1; mov r0, #hf0; 
+@0000_001d  23f3_22f2  //mov r3, #hf3; mov r2, #hf2;
+@0000_001e  25f5_24f4  //mov r5, #hf5; mov r4, #hf4;
+@0000_001f  27f7_26f6  //mov r7, #hf7; mov r6, #hf6;
+
+@0000_0020  e7fe_4148  //b here; adc r0, r1; 
+

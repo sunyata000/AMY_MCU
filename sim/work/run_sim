@@ -1,0 +1,12 @@
+#------------------------
+#Run simulation
+#------------------------
+ vsim    \
+      -c \
+      -l simulation.log \
+      -novopt +notimingchecks \
+      -L work  \
+      -L AMY_lib \
+      work.testbench \
+      -do ../testbench/run_finish
+  

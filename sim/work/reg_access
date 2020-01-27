@@ -1,0 +1,2 @@
+#!/bin/bash -f
+ bash ../scripts/make_simv.csh  first_mov reg_access

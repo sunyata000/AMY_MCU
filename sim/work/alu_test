@@ -1,0 +1,2 @@
+#!/bin/bash -f
+ bash ../scripts/make_simv_sw.csh alu_test none

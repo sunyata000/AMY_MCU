@@ -1,0 +1,29 @@
+
+
+#------------------------
+#=====Usage==============
+# code_compile <test_program> <test_case>
+#
+# example (hello_test.txt, uart_monitor.v)
+# code_compile hello_test uart_monitor
+#------------------------
+
+#------------------------
+#Load program
+#------------------------
+rm -f program.txt
+cp ../testcase/$1.txt program.txt
+
+
+#------------------------
+#Compile testbench
+#------------------------
+vlog \
+      -timescale 1ps/1ps\
+      -sv \
+      +incdir+../testcase \
+      +incdir+../testbench \
+      -work work   \
+      -novopt \
+      ../testbench/testbench.v \
+      ../testcase/$2.v
