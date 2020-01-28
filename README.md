@@ -44,10 +44,15 @@ www.mcucore.club
 <br>
 **项目赞助**<br>
 小额赞助、购买FPGA开发板、提供开发支持、甚至是一条建议或者评论，都是鼓舞PODES前行的动力。如果您有意赞助，请使用手机支付扫一扫下面的二维码：<br>
-&emsp;&emsp;支付宝扫一扫<br> 
+&emsp;&emsp;支付宝扫一扫
+<br> 
+
 ![alipay_QRcode](https://github.com/sunyata000/AMY_MCU/blob/master/images/alipay.jpg?raw=true "支付宝打赏")
 <br>
-&emsp;&emsp;微信扫一扫 <br>
+
+&emsp;&emsp;微信扫一扫 
+<br>
+
 ![wechat_QRcode](https://github.com/sunyata000/AMY_MCU/blob/master/images/wechat.jpg?raw=true "微信打赏") 
 <br>
 
