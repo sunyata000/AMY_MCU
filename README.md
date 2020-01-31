@@ -47,8 +47,8 @@ AMY-M0O的结构如下图，构成一个PODES-M0O处理器内核的最小评估�
 <br>
 
 ![AMY_diagram](https://github.com/sunyata000/AMY_MCU/tree/master/images/AMY_diagram.png)
-
 <br>
+
 ## AMY-M0O功能扩展
 AMY/PODES-M0O的结构设计为功能扩展做了特别优化，用户只需要将自己设计的APB接口模块挂接在系统提供的APB总线上即可。
 <br>   
