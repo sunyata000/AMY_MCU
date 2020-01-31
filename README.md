@@ -53,7 +53,7 @@ AMY/PODES-M0O的结构设计为功能扩展做了特别优化，用户只需要�
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="/images/amy_m0o_expand.png?raw=true">
+    src="https://github.com/sunyata000/AMY_MCU/raw/master/images/amy_m0o_expand.png?raw=true">
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
