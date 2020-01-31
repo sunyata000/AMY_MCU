@@ -65,29 +65,16 @@ AMY/PODES-M0O的结构设计为功能扩展做了特别优化，用户只需要�
 具体使用方式，请参考项目中的使用手册：PODES_M0O_Application_User_Manual_V1p0 文档。
 <br>
 
-**项目赞助**
-<br>
-小额赞助、购买FPGA开发板、提供开发支持、甚至是一条建议或者评论，都是鼓舞PODES前行的动力。如果您有意赞助，请使用手机支付扫一扫下面的二维码：<br>
-       
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="/images/wechat.jpg?raw=true">
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">微信赞赏</div>
-</center>
-<br>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="/images/alipay.jpg?raw=true">
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">支付宝赞赏</div>
-</center>
+## 贡献
 
-<br><br>
+1. 直接代码贡献请从 master 创建你的分支。<br>
+2. 新的需求或者建议请留言，我会评估并处理。<br>
+3. 如果你修改了或者增加了代码，请提供对应的文档。<br>
+4. 确保代码风格一致 (尽量参考原始代码风格)。<br>
+5. 如果你想直接资助这个项目，请参考[README_AMY](./README_AMY.md)<br>
+
+## 许可
+
+LGPL
+
 <br> 
